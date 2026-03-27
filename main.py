@@ -1,8 +1,9 @@
+from hangman import game_loop
+
 
 def main():
-    print("Hello")
+    game_loop()
 
-    
 if __name__ == '__main__':
     main()
 
