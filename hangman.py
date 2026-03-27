@@ -16,14 +16,19 @@ def parse_secret(ch):
     return p
 
 def player_guess():
+    p_in = input("Enter guess: ").lower()
+    if len(p_in) != 1 or  not p_in.isalpha():
+        print("Enter valid character")
+    return p_in
 
 def game_loop():
     ch = choose_word()
     pars = parse_secret(ch)
     lives = 6
-    game_over = True
+    game_over = False
     print_logo()
     while not game_over:
+        player_guess()
 
 
 
