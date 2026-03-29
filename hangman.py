@@ -58,7 +58,7 @@ def game_loop():
 
     while not game_over:
         g = player_guess()
-        displayed = check(g, ch, alg)
+        displayed = check(g, ch, alg,lives)
         print(displayed)
 
         if lives == 0:
